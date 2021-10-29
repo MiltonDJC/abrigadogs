@@ -1,0 +1,220 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.cabecera{
+    margin: 5px;
+}
+
+.titulo{
+    display: block;
+    text-align: center;
+    background-color: orange;
+    padding: 2px;
+    font-size: 80px;
+    font-family: 'Londrina Solid', cursive;
+    border-radius: 20px;
+}
+
+#leg1{
+    margin: 0 20px;
+    transform: rotate(350deg);
+    font-size: 65px;
+}
+
+#leg2{
+    margin: 0 20px;
+    transform: rotate(-350deg);
+    font-size: 65px;
+}
+
+.nav{
+    display: block;
+    background-color: orange;
+    margin: 10px 5px 0 5px;
+    text-align: center;
+    border-radius: 20px;
+}
+
+.nav i{
+    margin-right: 10px;
+}
+
+ul{
+    margin: 5px;
+    padding: 0;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content:space-evenly;
+}
+
+li{
+    margin: 5px;
+    display: inline-block;
+    font-size: 30px;
+    font-family: cursive;
+    font-weight: bold;
+    text-decoration: none;
+    list-style: none;
+}
+
+.doggy{
+    height: 70px;
+    width: 70px;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+
+a:hover{
+    color: white;
+}
+
+.articleAndAside{
+    display: flex;
+    flex-direction: row;
+}
+
+article{
+    margin: 5px;
+    padding: 0;
+    background-color: orange;
+    border-radius: 20px;
+    font-family: cursive;
+    font-weight: bold;
+    text-align: center;
+    width: 100%;
+}
+
+.presentacionModelos{
+    margin: 10px;
+    padding: 5px;
+    font-size: 20px;
+    font-family: cursive;
+    color: black;
+    border-radius: 20px;
+}
+
+.carrusel{
+    width: 35%;
+    margin: auto;
+    padding: 0 0 15px 0;
+}
+
+img{
+    margin: 0;
+    border-radius: 20px;
+}
+
+.aside{
+    display: inline-block;
+    width: 25%;
+    margin: 5px;
+    padding: 5px;
+    background-color: orange;
+    border-radius: 20px;
+}
+
+.mercadolibre1{
+    width: 100%;
+    height: 50%;
+    border-radius: 20px;
+    padding: 10px;
+}
+
+.mercadolibre2{
+    width: 100%;
+    height: 50%;
+    border-radius: 20px;
+    padding: 10px;
+}
+
+.redes{
+    display: block;
+    background-color:orange;
+    margin: 5px;
+    padding: 2%;
+    border-radius: 20px;
+    font-size: 25px;
+    font-family: 'Londrina Solid', cursive;
+    text-align: center;
+}
+
+.redes i{
+    margin-right: 5px;
+}
+
+.pie a{
+    margin-right: 7%;
+    margin-left: 7%;
+}
+
+
+@media all and (max-width: 768px){
+    .articleAndAside{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .aside{
+        display: flex;
+        flex-flow: row;
+        width: 100%;
+        height: 120px;
+    }
+    .aside a{
+        height: 60px;
+        width: 50%;
+    }
+    .aside img{
+        height: 185%;
+    }
+    .pie{
+        display: flex;
+        flex-direction: row;
+    }
+}
+
+@media all and (max-width: 426px){
+    .titulo{
+        display: flex;
+        justify-content:center;
+        font-size: 50px;
+    }
+    #leg1{
+        font-size: 50px;
+        position: relative;
+        top: 10px;
+    }
+    #leg2{
+        font-size: 50px;
+        position: relative;
+        top: 10px;
+    }
+    ul{
+        display: flex;
+        flex-direction: column;
+        margin: 5px;
+    }
+    .article{
+        width: 100%;
+    }
+    .carrusel{
+        width: 70%;
+        height: 70%;
+    }
+    .pie{
+        display: flex;
+        flex-direction: column;
+        margin: 0;
+    }
+    .pie a{
+        margin: 10px;
+    }
+}
+

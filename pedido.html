@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="ico/logoabrigadogs.ico">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Londrina+Solid&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/pedido.css">
+    <title>abrigadogs.com</title>
+</head>
+
+<body>
+    <div class="containerAll">
+      <div id="cabecera">
+        <header>
+          <div class="titulo">
+            <i id="leg1" class="fas fa-paw"></i>Abrigadogs<i id="leg2" class="fas fa-paw"></i>
+          </div>
+        </header>
+      </div>
+      <div class="navegacion">
+        <nav class="nav">
+          <ul class="menu">
+            <li class="logo"><a href="index.html"><img src="img/logoabrigadogs.png" alt="logoAbrigadogs" class="doggy"></a></li>
+            <li class="pedido"><a href="pedido.html"><i id="shoppingCart" class="fas fa-cart-plus"></i>Pedido</a></li>
+            <li class="unirse"><a href="unirse.html"><i class="fas fa-briefcase"></i>Únetenos</a></li>
+          </ul>
+        </nav>
+      </div>
+        <form action="">
+          <div>
+            <label for="nombre">Nombre: </label>
+            <input id="nombre" type="text" name="name">
+          </div>
+          <div>
+            <label for="apellido">Apellido: </label>
+            <input id="apellido" type="text" name="surname">
+          </div>
+          <div>
+            <label for="mail">E-mail: </label>
+            <input id="mail" type="email" name="e-mail">
+          </div>
+          <div>
+            <label for="direccion">Dirección: </label>
+            <input id="direccion" type="text" placeholder=" Direccion a donde enviar su pedido." name="direction">
+          </div>
+            <label for="pedido">Pedido: </label>
+            <input id="pedido" type="text" placeholder=" Nombre de los modelos elegidos." contenteditable="true" name="order">
+          <div class="botonEnviar">
+            <input type="submit" onclick="return enviarFormulario();" value="Enviar">
+          </div>
+          <div id="error"></div>
+        </form>
+      <footer class="redes">
+        <nav class="pie">
+          <a href="#"><i id="instagram" class="fab fa-instagram"></i>@abrigadogs</a>
+          <a href="#"><i id="facebook" class="fab fa-facebook-square"></i>@Abrigadogs</a> 
+          <a href="#"><i id="twitter" class="fab fa-twitter"></i>@abrigadogs</a>
+        </nav>
+      </footer>
+    </div>
+    <script src="js/fomulario.js"></script>
+</body>

@@ -1,0 +1,205 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#cabecera{
+    margin: 5px;
+}
+
+.titulo{
+    display: block;
+    text-align: center;
+    background-color: orange;
+    padding: 2px;
+    font-size: 80px;
+    font-family: 'Londrina Solid', cursive;
+    border-radius: 20px;
+}
+
+#leg1{
+    margin: 0 20px;
+    transform: rotate(350deg);
+    font-size: 65px;
+}
+
+#leg2{
+    margin: 0 20px;
+    transform: rotate(-350deg);
+    font-size: 65px;
+}
+
+.nav{
+    display: block;
+    background-color: orange;
+    margin: 10px 5px 0 5px;
+    text-align: center;
+    border-radius: 20px;
+}
+
+.nav i{
+    margin-right: 10px;
+}
+
+ul{
+    margin: 5px;
+    padding: 0;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content:space-evenly;
+}
+
+li{
+    margin: 5px;
+    display: inline-block;
+    font-size: 30px;
+    font-family: cursive;
+    font-weight: bold;
+    text-decoration: none;
+    list-style: none;
+}
+
+.doggy{
+    height: 70px;
+    width: 70px;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+
+a:hover{
+    color: white;
+}
+
+form{
+    margin: 5px;
+    padding: 10px;
+    background-color: orange;
+    border-radius: 20px;
+    
+}
+
+form div{
+    margin: 15px 0;
+    font-size: 20px;
+}
+
+label{
+    display: block;
+    float: left;
+    width: 70px;
+    margin-right: 20px;
+}
+
+#nombre{
+    width: 30%;
+    border-radius: 10px;
+}
+#apellido{
+    width: 30%;
+    border-radius: 10px;
+}
+#mail{
+    width: 30%;
+    border-radius: 10px;
+}
+#direccion{
+    width: 30%;
+    border-radius: 10px;
+}
+#pedido{
+    width: 30%;
+    border-radius: 10px;
+}
+
+.botonEnviar{
+    text-align: center;
+}
+
+.botonEnviar input{
+    font-size: 25px;
+    border-radius: 20px;
+    margin: 5px;
+    padding: 5px;
+}
+
+.redes{
+    display: block;
+    background-color:orange;
+    margin: 5px;
+    padding: 2%;
+    border-radius: 20px;
+    font-size: 25px;
+    font-family: 'Londrina Solid', cursive;
+    text-align: center;
+}
+
+.redes i{
+    margin-right: 5px;
+}
+
+.pie a{
+    margin-right: 7%;
+    margin-left: 7%;
+}
+
+@media all and (max-width: 768px){
+    .pie{
+        display: flex;
+        flex-direction: row;
+    }
+}
+
+@media all and (max-width: 426px){
+    .titulo{
+        display: flex;
+        justify-content:center;
+        font-size: 50px;
+    }
+    #leg1{
+        font-size: 50px;
+        position: relative;
+        top: 5px;
+    }
+    #leg2{
+        font-size: 50px;
+        position: relative;
+        top: 5px;
+    }
+    ul{
+        display: flex;
+        flex-direction: column;
+        margin: 5px;
+    }
+    #nombre{
+        width: 60%;
+    }
+    #apellido{
+        width: 60%;
+    }
+    #mail{
+        width: 60%;
+    }
+    #direccion{
+        width: 60%;
+    }
+    #pedido{
+        width: 60%;
+    }
+    .botonEnviar input{
+        margin-top: 15px;
+        width: 25%;
+    }
+    .pie{
+        display: flex;
+        flex-direction: column;
+        margin: 0;
+    }
+    .pie a{
+        margin: 10px;
+    }
+}
